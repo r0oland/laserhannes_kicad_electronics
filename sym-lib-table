@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name cascade_trigger-rescue)(type Legacy)(uri ${KIPRJMOD}/cascade_trigger/cascade_trigger-rescue.lib)(options "")(descr ""))
+  (lib (name ESP32_mini)(type Legacy)(uri C:/Users/johan/Downloads/ESP32_mini.lib)(options "")(descr ""))
+)

@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP level_shifter
+D Bi-Directional Logic Level Converter (4 Channel), based on BSS138 N-Channel Logic Level Enhancement Mode Field Effect Transistor.
+K logic, level, shifter
+F https://www.addicore.com/Logic-Level-Converter-Bi-Directional-5V-to-3-3V-p/227.htm
+$ENDCMP
+#
+#End Doc Library

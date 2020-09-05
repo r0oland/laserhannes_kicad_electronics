@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name mini_esp32)(type KiCad)(uri "${KIPRJMOD}/custom_libs/mini ESP32 libary/mini_esp32.pretty")(options "")(descr "")(disabled))
+  (lib (name teensy)(type KiCad)(uri ${KIPRJMOD}/custom_libs/teensy_library/teensy.pretty)(options "")(descr ""))
+  (lib (name ESP32_mini)(type KiCad)(uri C:/Users/johan/Downloads/ESP32_mini.pretty)(options "")(descr ""))
+)
