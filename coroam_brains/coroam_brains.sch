@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:coroam_brains-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+3.3V #PWR018
+L coroam_brains-rescue:+3.3V-power #PWR018
 U 1 1 5F539EF8
 P 6550 2900
 F 0 "#PWR018" H 6550 2750 50  0001 C CNN
@@ -26,7 +25,7 @@ F 3 "" H 6550 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR017
+L coroam_brains-rescue:GND-power #PWR017
 U 1 1 5F53B2BB
 P 6450 3500
 F 0 "#PWR017" H 6450 3250 50  0001 C CNN
@@ -49,7 +48,7 @@ Wire Wire Line
 	6250 3400 6450 3400
 Connection ~ 6450 3400
 $Comp
-L power:+5V #PWR015
+L coroam_brains-rescue:+5V-power #PWR015
 U 1 1 5F543A46
 P 6300 2900
 F 0 "#PWR015" H 6300 2750 50  0001 C CNN
@@ -68,7 +67,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 3000 6250 3000
 $Comp
-L power:+5V #PWR02
+L coroam_brains-rescue:+5V-power #PWR02
 U 1 1 5F540B62
 P 1200 900
 F 0 "#PWR02" H 1200 750 50  0001 C CNN
@@ -79,7 +78,7 @@ F 3 "" H 1200 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L coroam_brains-rescue:GND-power #PWR05
 U 1 1 5F540B68
 P 1800 1750
 F 0 "#PWR05" H 1800 1500 50  0001 C CNN
@@ -90,7 +89,7 @@ F 3 "" H 1800 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear:L7805 U1
+L coroam_brains-rescue:L7805-Regulator_Linear U1
 U 1 1 5F540B6E
 P 3250 950
 F 0 "U1" H 3250 1192 50  0000 C CNN
@@ -101,7 +100,7 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR09
+L coroam_brains-rescue:+12V-power #PWR09
 U 1 1 5F540B74
 P 2750 900
 F 0 "#PWR09" H 2750 750 50  0001 C CNN
@@ -116,7 +115,7 @@ Wire Wire Line
 Wire Wire Line
 	2750 950  2950 950 
 $Comp
-L power:GND #PWR010
+L coroam_brains-rescue:GND-power #PWR010
 U 1 1 5F540B82
 P 3250 1400
 F 0 "#PWR010" H 3250 1150 50  0001 C CNN
@@ -139,7 +138,7 @@ Wire Wire Line
 	2750 950  2750 1000
 Connection ~ 2750 950 
 $Comp
-L Device:CP C5
+L coroam_brains-rescue:CP-Device C5
 U 1 1 5F540B8F
 P 3650 1150
 F 0 "C5" H 3768 1196 50  0000 L CNN
@@ -158,7 +157,7 @@ Wire Wire Line
 Wire Wire Line
 	3650 950  3550 950 
 $Comp
-L power:+5V #PWR011
+L coroam_brains-rescue:+5V-power #PWR011
 U 1 1 5F540B99
 P 3650 900
 F 0 "#PWR011" H 3650 750 50  0001 C CNN
@@ -182,7 +181,7 @@ Wire Notes Line
 Text Notes 2600 650  0    50   ~ 0
 12V -> 5V conversion
 $Comp
-L Device:CP C2
+L coroam_brains-rescue:CP-Device C2
 U 1 1 5F540BA6
 P 1200 1100
 F 0 "C2" H 1250 1200 50  0000 L CNN
@@ -195,7 +194,7 @@ $EndComp
 Wire Wire Line
 	1200 900  1200 950 
 $Comp
-L Device:R R1
+L coroam_brains-rescue:R-Device R1
 U 1 1 5F540BAD
 P 1800 1100
 F 0 "R1" H 1730 1054 50  0000 R CNN
@@ -206,7 +205,7 @@ F 3 "~" H 1800 1100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR04
+L coroam_brains-rescue:+5V-power #PWR04
 U 1 1 5F540BB3
 P 1800 900
 F 0 "#PWR04" H 1800 750 50  0001 C CNN
@@ -219,7 +218,7 @@ $EndComp
 Wire Wire Line
 	1800 900  1800 950 
 $Comp
-L Device:LED D1
+L coroam_brains-rescue:LED-Device D1
 U 1 1 5F540BBA
 P 1800 1400
 F 0 "D1" V 1839 1283 50  0000 R CNN
@@ -230,7 +229,7 @@ F 3 "~" H 1800 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R2
+L coroam_brains-rescue:R-Device R2
 U 1 1 5F540BC0
 P 2150 1100
 F 0 "R2" H 2080 1054 50  0000 R CNN
@@ -243,7 +242,7 @@ $EndComp
 Wire Wire Line
 	2150 900  2150 950 
 $Comp
-L Device:LED D2
+L coroam_brains-rescue:LED-Device D2
 U 1 1 5F540BC7
 P 2150 1400
 F 0 "D2" V 2189 1283 50  0000 R CNN
@@ -254,7 +253,7 @@ F 3 "~" H 2150 1400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+12V #PWR06
+L coroam_brains-rescue:+12V-power #PWR06
 U 1 1 5F540BCD
 P 2150 900
 F 0 "#PWR06" H 2150 750 50  0001 C CNN
@@ -265,7 +264,7 @@ F 3 "" H 2150 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C3
+L coroam_brains-rescue:CP-Device C3
 U 1 1 5F540BD3
 P 1500 1100
 F 0 "C3" H 1550 1200 50  0000 L CNN
@@ -276,7 +275,7 @@ F 3 "~" H 1500 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR03
+L coroam_brains-rescue:+12V-power #PWR03
 U 1 1 5F540BD9
 P 1500 900
 F 0 "#PWR03" H 1500 750 50  0001 C CNN
@@ -297,7 +296,7 @@ Wire Wire Line
 Text Notes 750  700  0    50   ~ 0
 PWR LEDs + Capacitors\n\n
 $Comp
-L Device:CP C4
+L coroam_brains-rescue:CP-Device C4
 U 1 1 5F540B7C
 P 2750 1150
 F 0 "C4" H 2868 1196 50  0000 L CNN
@@ -308,7 +307,7 @@ F 3 "~" H 2750 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L laserhannes_custom:level_shifter lls1
+L coroam_brains-rescue:level_shifter-laserhannes_custom lls1
 U 1 1 5F53B58D
 P 6350 1300
 F 0 "lls1" H 6325 1815 50  0000 C CNN
@@ -319,7 +318,7 @@ F 3 "https://www.addicore.com/Logic-Level-Converter-Bi-Directional-5V-to-3-3V-p/
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L coroam_brains-rescue:GND-power #PWR016
 U 1 1 5F53CC9D
 P 6350 1800
 F 0 "#PWR016" H 6350 1550 50  0001 C CNN
@@ -345,7 +344,7 @@ Wire Wire Line
 	5850 1350 5950 1350
 Connection ~ 6350 1750
 $Comp
-L power:+5V #PWR019
+L coroam_brains-rescue:+5V-power #PWR019
 U 1 1 5F54055C
 P 6800 850
 F 0 "#PWR019" H 6800 700 50  0001 C CNN
@@ -362,7 +361,7 @@ Wire Wire Line
 Wire Wire Line
 	1800 1550 1800 1700
 $Comp
-L Device:CP C1
+L coroam_brains-rescue:CP-Device C1
 U 1 1 5F54CF6A
 P 900 1100
 F 0 "C1" H 950 1200 50  0000 L CNN
@@ -377,7 +376,7 @@ Wire Wire Line
 Wire Wire Line
 	900  1250 900  1700
 $Comp
-L power:+3.3V #PWR01
+L coroam_brains-rescue:+3.3V-power #PWR01
 U 1 1 5F550889
 P 900 900
 F 0 "#PWR01" H 900 750 50  0001 C CNN
@@ -409,7 +408,7 @@ Wire Notes Line
 Wire Notes Line
 	750  2000 750  650 
 $Comp
-L power:+3.3V #PWR014
+L coroam_brains-rescue:+3.3V-power #PWR014
 U 1 1 5F55DB2F
 P 5850 850
 F 0 "#PWR014" H 5850 700 50  0001 C CNN
@@ -424,7 +423,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 1250 5950 1250
 $Comp
-L Sensor_Temperature:DS18B20 #VirtTempSens1
+L coroam_brains-rescue:DS18B20-Sensor_Temperature #VirtTempSens1
 U 1 1 5F5A15DA
 P 1600 2850
 F 0 "#VirtTempSens1" H 1370 2896 50  0000 R CNN
@@ -443,7 +442,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 3150 1850 3150
 $Comp
-L power:VCC #PWR012
+L coroam_brains-rescue:VCC-power #PWR012
 U 1 1 5F5A168D
 P 5200 900
 F 0 "#PWR012" H 5200 750 50  0001 C CNN
@@ -458,7 +457,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 1000 5200 900 
 $Comp
-L power:GND #PWR013
+L coroam_brains-rescue:GND-power #PWR013
 U 1 1 5F5A1695
 P 5200 1350
 F 0 "#PWR013" H 5200 1100 50  0001 C CNN
@@ -492,7 +491,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 2950 2400 2950
 $Comp
-L Connector:Screw_Terminal_01x03 TempLaser1
+L coroam_brains-rescue:Screw_Terminal_01x03-Connector TempLaser1
 U 1 1 5F5A16BA
 P 2200 2850
 F 0 "TempLaser1" H 2300 2600 50  0000 C CNN
@@ -513,7 +512,7 @@ Wire Notes Line
 Wire Notes Line
 	5350 1650 5350 650 
 $Comp
-L Device:R oneWirePup1
+L coroam_brains-rescue:R-Device oneWirePup1
 U 1 1 5F5A1745
 P 2700 2600
 F 0 "oneWirePup1" V 2800 2500 50  0000 L CNN
@@ -524,7 +523,7 @@ F 3 "~" H 2700 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR07
+L coroam_brains-rescue:+3.3V-power #PWR07
 U 1 1 5F61D207
 P 2500 2450
 F 0 "#PWR07" H 2500 2300 50  0001 C CNN
@@ -535,7 +534,7 @@ F 3 "" H 2500 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempWater1
+L coroam_brains-rescue:Screw_Terminal_01x03-Connector TempWater1
 U 1 1 5F637CDD
 P 2200 3200
 F 0 "TempWater1" H 2500 3250 50  0000 C CNN
@@ -546,7 +545,7 @@ F 3 "~" H 2200 3200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L laserhannes_custom:mini_esp32 U2
+L coroam_brains-rescue:mini_esp32-laserhannes_custom U2
 U 1 1 5F53A6B0
 P 5700 2900
 F 0 "U2" H 5725 3025 50  0000 C CNN
@@ -557,7 +556,7 @@ F 3 "" H 5850 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L coroam_brains-rescue:GND-power #PWR08
 U 1 1 5F5A16C8
 P 2600 4350
 F 0 "#PWR08" H 2600 4100 50  0001 C CNN
@@ -573,7 +572,7 @@ Wire Wire Line
 	2500 3100 2400 3100
 Connection ~ 2500 2750
 $Comp
-L Motor:Fan_4pin #Fan1
+L coroam_brains-rescue:Fan_4pin-Motor #Fan1
 U 1 1 5F654C7A
 P 4250 3200
 F 0 "#Fan1" H 4408 3250 50  0000 L CNN
@@ -584,7 +583,7 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 32
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Fan_4pin #Fan2
+L coroam_brains-rescue:Fan_4pin-Motor #Fan2
 U 1 1 5F657083
 P 4250 3850
 F 0 "#Fan2" H 4408 3900 50  0000 L CNN
@@ -595,7 +594,7 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 38
 	1    0    0    -1  
 $EndComp
 $Comp
-L Motor:Fan_4pin #Fan3
+L coroam_brains-rescue:Fan_4pin-Motor #Fan3
 U 1 1 5F657A07
 P 4250 4550
 F 0 "#Fan3" H 4408 4600 50  0000 L CNN
@@ -606,7 +605,7 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 45
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempCasing1
+L coroam_brains-rescue:Screw_Terminal_01x03-Connector TempCasing1
 U 1 1 5F65A7BF
 P 2200 3550
 F 0 "TempCasing1" H 2500 3600 50  0000 C CNN
@@ -617,7 +616,7 @@ F 3 "~" H 2200 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempElectronics1
+L coroam_brains-rescue:Screw_Terminal_01x03-Connector TempElectronics1
 U 1 1 5F65AD77
 P 2200 3900
 F 0 "TempElectronics1" H 2600 3950 50  0000 C CNN
@@ -669,7 +668,7 @@ Wire Wire Line
 Connection ~ 2600 3300
 Connection ~ 2400 2950
 $Comp
-L Connector:Screw_Terminal_01x03 TempBreadBoard1
+L coroam_brains-rescue:Screw_Terminal_01x03-Connector TempBreadBoard1
 U 1 1 5F68CFDD
 P 2200 4250
 F 0 "TempBreadBoard1" H 2600 4250 50  0000 C CNN
@@ -731,7 +730,7 @@ DS18B20 based temperature sensing
 Text Notes 4100 650  0    50   ~ 0
 DS18B20 based temperature sensing
 $Comp
-L Connector:Screw_Terminal_01x04 LCD_I2C1
+L coroam_brains-rescue:Screw_Terminal_01x04-Connector LCD_I2C1
 U 1 1 5F5A1687
 P 4800 1200
 F 0 "LCD_I2C1" H 4718 867 50  0000 C CNN

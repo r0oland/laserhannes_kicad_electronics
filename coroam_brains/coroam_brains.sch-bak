@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L power:+3.3V #PWR016
+L power:+3.3V #PWR018
 U 1 1 5F539EF8
 P 6550 2900
-F 0 "#PWR016" H 6550 2750 50  0001 C CNN
+F 0 "#PWR018" H 6550 2750 50  0001 C CNN
 F 1 "+3.3V" H 6565 3073 50  0000 C CNN
 F 2 "" H 6550 2900 50  0001 C CNN
 F 3 "" H 6550 2900 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "" H 6550 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L power:GND #PWR017
 U 1 1 5F53B2BB
 P 6450 3500
-F 0 "#PWR015" H 6450 3250 50  0001 C CNN
+F 0 "#PWR017" H 6450 3250 50  0001 C CNN
 F 1 "GND" H 6455 3327 50  0000 C CNN
 F 2 "" H 6450 3500 50  0001 C CNN
 F 3 "" H 6450 3500 50  0001 C CNN
@@ -49,10 +49,10 @@ Wire Wire Line
 	6250 3400 6450 3400
 Connection ~ 6450 3400
 $Comp
-L power:+5V #PWR014
+L power:+5V #PWR015
 U 1 1 5F543A46
 P 6300 2900
-F 0 "#PWR014" H 6300 2750 50  0001 C CNN
+F 0 "#PWR015" H 6300 2750 50  0001 C CNN
 F 1 "+5V" H 6315 3073 50  0000 C CNN
 F 2 "" H 6300 2900 50  0001 C CNN
 F 3 "" H 6300 2900 50  0001 C CNN
@@ -101,10 +101,10 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR08
+L power:+12V #PWR09
 U 1 1 5F540B74
 P 2750 900
-F 0 "#PWR08" H 2750 750 50  0001 C CNN
+F 0 "#PWR09" H 2750 750 50  0001 C CNN
 F 1 "+12V" H 2765 1073 50  0000 C CNN
 F 2 "" H 2750 900 50  0001 C CNN
 F 3 "" H 2750 900 50  0001 C CNN
@@ -116,10 +116,10 @@ Wire Wire Line
 Wire Wire Line
 	2750 950  2950 950 
 $Comp
-L power:GND #PWR09
+L power:GND #PWR010
 U 1 1 5F540B82
 P 3250 1400
-F 0 "#PWR09" H 3250 1150 50  0001 C CNN
+F 0 "#PWR010" H 3250 1150 50  0001 C CNN
 F 1 "GND" H 3255 1227 50  0000 C CNN
 F 2 "" H 3250 1400 50  0001 C CNN
 F 3 "" H 3250 1400 50  0001 C CNN
@@ -319,10 +319,10 @@ F 3 "https://www.addicore.com/Logic-Level-Converter-Bi-Directional-5V-to-3-3V-p/
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR019
+L power:GND #PWR016
 U 1 1 5F53CC9D
 P 6350 1800
-F 0 "#PWR019" H 6350 1550 50  0001 C CNN
+F 0 "#PWR016" H 6350 1550 50  0001 C CNN
 F 1 "GND" H 6355 1627 50  0000 C CNN
 F 2 "" H 6350 1800 50  0001 C CNN
 F 3 "" H 6350 1800 50  0001 C CNN
@@ -345,10 +345,10 @@ Wire Wire Line
 	5850 1350 5950 1350
 Connection ~ 6350 1750
 $Comp
-L power:+5V #PWR020
+L power:+5V #PWR019
 U 1 1 5F54055C
 P 6800 850
-F 0 "#PWR020" H 6800 700 50  0001 C CNN
+F 0 "#PWR019" H 6800 700 50  0001 C CNN
 F 1 "+5V" H 6815 1023 50  0000 C CNN
 F 2 "" H 6800 850 50  0001 C CNN
 F 3 "" H 6800 850 50  0001 C CNN
@@ -409,10 +409,10 @@ Wire Notes Line
 Wire Notes Line
 	750  2000 750  650 
 $Comp
-L power:+3.3V #PWR018
+L power:+3.3V #PWR014
 U 1 1 5F55DB2F
 P 5850 850
-F 0 "#PWR018" H 5850 700 50  0001 C CNN
+F 0 "#PWR014" H 5850 700 50  0001 C CNN
 F 1 "+3.3V" H 5865 1023 50  0000 C CNN
 F 2 "" H 5850 850 50  0001 C CNN
 F 3 "" H 5850 850 50  0001 C CNN
@@ -492,10 +492,10 @@ Wire Wire Line
 Wire Wire Line
 	1850 2950 2400 2950
 $Comp
-L Connector:Screw_Terminal_01x03 TempLaser
+L Connector:Screw_Terminal_01x03 TempLaser1
 U 1 1 5F5A16BA
 P 2200 2850
-F 0 "TempLaser" H 2300 2600 50  0000 C CNN
+F 0 "TempLaser1" H 2300 2600 50  0000 C CNN
 F 1 "DigiTempSens1" H 2250 2650 50  0001 C CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 2200 2850 50  0001 C CNN
 F 3 "~" H 2200 2850 50  0001 C CNN
@@ -535,10 +535,10 @@ F 3 "" H 2500 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempWater
+L Connector:Screw_Terminal_01x03 TempWater1
 U 1 1 5F637CDD
 P 2200 3200
-F 0 "TempWater" H 2500 3250 50  0000 C CNN
+F 0 "TempWater1" H 2500 3250 50  0000 C CNN
 F 1 "DigiTempSens1" H 2250 3000 50  0001 C CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 2200 3200 50  0001 C CNN
 F 3 "~" H 2200 3200 50  0001 C CNN
@@ -557,10 +557,10 @@ F 3 "" H 5850 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR010
+L power:GND #PWR08
 U 1 1 5F5A16C8
 P 2600 4350
-F 0 "#PWR010" H 2600 4100 50  0001 C CNN
+F 0 "#PWR08" H 2600 4100 50  0001 C CNN
 F 1 "GND" H 2605 4177 50  0000 C CNN
 F 2 "" H 2600 4350 50  0001 C CNN
 F 3 "" H 2600 4350 50  0001 C CNN
@@ -606,10 +606,10 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 45
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempCasing
+L Connector:Screw_Terminal_01x03 TempCasing1
 U 1 1 5F65A7BF
 P 2200 3550
-F 0 "TempCasing" H 2500 3600 50  0000 C CNN
+F 0 "TempCasing1" H 2500 3600 50  0000 C CNN
 F 1 "DigiTempSens1" H 2250 3350 50  0001 C CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 2200 3550 50  0001 C CNN
 F 3 "~" H 2200 3550 50  0001 C CNN
@@ -617,10 +617,10 @@ F 3 "~" H 2200 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x03 TempElectronics
+L Connector:Screw_Terminal_01x03 TempElectronics1
 U 1 1 5F65AD77
 P 2200 3900
-F 0 "TempElectronics" H 2600 3950 50  0000 C CNN
+F 0 "TempElectronics1" H 2600 3950 50  0000 C CNN
 F 1 "DigiTempSens1" H 2250 3700 50  0001 C CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 2200 3900 50  0001 C CNN
 F 3 "~" H 2200 3900 50  0001 C CNN
@@ -669,10 +669,10 @@ Wire Wire Line
 Connection ~ 2600 3300
 Connection ~ 2400 2950
 $Comp
-L Connector:Screw_Terminal_01x03 TempBreadBoard
+L Connector:Screw_Terminal_01x03 TempBreadBoard1
 U 1 1 5F68CFDD
 P 2200 4250
-F 0 "TempBreadBoard" H 2600 4250 50  0000 C CNN
+F 0 "TempBreadBoard1" H 2600 4250 50  0000 C CNN
 F 1 "DigiTempSens1" H 2250 4050 50  0001 C CNN
 F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 2200 4250 50  0001 C CNN
 F 3 "~" H 2200 4250 50  0001 C CNN

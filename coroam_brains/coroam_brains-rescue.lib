@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# coroam_brains-rescue_+12V-power
+# +12V-power
 #
-DEF coroam_brains-rescue_+12V-power #PWR 0 0 Y Y 1 F P
+DEF +12V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "coroam_brains-rescue_+12V-power" 0 140 50 H V C CNN
+F1 "+12V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_+3.3V-power
+# +3.3V-power
 #
-DEF coroam_brains-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "coroam_brains-rescue_+3.3V-power" 0 140 50 H V C CNN
+F1 "+3.3V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_+5V-power
+# +5V-power
 #
-DEF coroam_brains-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+DEF +5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "coroam_brains-rescue_+5V-power" 0 140 50 H V C CNN
+F1 "+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +46,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_CP-Device
+# CP-Device
 #
-DEF coroam_brains-rescue_CP-Device C 0 10 N Y 1 F N
+DEF CP-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "coroam_brains-rescue_CP-Device" 25 -100 50 H V L CNN
+F1 "CP-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -66,11 +66,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_DS18B20-Sensor_Temperature
+# DS18B20-Sensor_Temperature
 #
-DEF coroam_brains-rescue_DS18B20-Sensor_Temperature U 0 40 Y Y 1 F N
+DEF DS18B20-Sensor_Temperature U 0 40 Y Y 1 F N
 F0 "U" -150 250 50 H V C CNN
-F1 "coroam_brains-rescue_DS18B20-Sensor_Temperature" 250 250 50 H V C CNN
+F1 "DS18B20-Sensor_Temperature" 250 250 50 H V C CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" -1000 -250 50 H I C CNN
 F3 "" -150 250 50 H I C CNN
 $FPLIST
@@ -94,11 +94,11 @@ X VDD 3 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_Fan_4pin-Motor
+# Fan_4pin-Motor
 #
-DEF coroam_brains-rescue_Fan_4pin-Motor M 0 0 Y Y 1 F N
+DEF Fan_4pin-Motor M 0 0 Y Y 1 F N
 F0 "M" 100 200 50 H V L CNN
-F1 "coroam_brains-rescue_Fan_4pin-Motor" 100 -100 50 H V L TNN
+F1 "Fan_4pin-Motor" 100 -100 50 H V L TNN
 F2 "" 0 10 50 H I C CNN
 F3 "" 0 10 50 H I C CNN
 $FPLIST
@@ -130,11 +130,11 @@ X PWM 4 -300 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_GND-power
+# GND-power
 #
-DEF coroam_brains-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "coroam_brains-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -143,11 +143,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_L7805-Regulator_Linear
+# L7805-Regulator_Linear
 #
-DEF coroam_brains-rescue_L7805-Regulator_Linear U 0 10 Y Y 1 F N
+DEF L7805-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "coroam_brains-rescue_L7805-Regulator_Linear" 0 125 50 H V L CNN
+F1 "L7805-Regulator_Linear" 0 125 50 H V L CNN
 F2 "" 25 -150 50 H I L CIN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -163,11 +163,11 @@ X OUT 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_LED-Device
+# LED-Device
 #
-DEF coroam_brains-rescue_LED-Device D 0 40 N N 1 F N
+DEF LED-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "coroam_brains-rescue_LED-Device" 0 -100 50 H V C CNN
+F1 "LED-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -186,11 +186,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_R-Device
+# R-Device
 #
-DEF coroam_brains-rescue_R-Device R 0 0 N Y 1 F N
+DEF R-Device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "coroam_brains-rescue_R-Device" 0 0 50 V V C CNN
+F1 "R-Device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -203,11 +203,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_Screw_Terminal_01x03-Connector
+# Screw_Terminal_01x03-Connector
 #
-DEF coroam_brains-rescue_Screw_Terminal_01x03-Connector J 0 40 Y N 1 F N
+DEF Screw_Terminal_01x03-Connector J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "coroam_brains-rescue_Screw_Terminal_01x03-Connector" 0 -200 50 H V C CNN
+F1 "Screw_Terminal_01x03-Connector" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -230,11 +230,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_Screw_Terminal_01x04-Connector
+# Screw_Terminal_01x04-Connector
 #
-DEF coroam_brains-rescue_Screw_Terminal_01x04-Connector J 0 40 Y N 1 F N
+DEF Screw_Terminal_01x04-Connector J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "coroam_brains-rescue_Screw_Terminal_01x04-Connector" 0 -300 50 H V C CNN
+F1 "Screw_Terminal_01x04-Connector" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -261,11 +261,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_VCC-power
+# VCC-power
 #
-DEF coroam_brains-rescue_VCC-power #PWR 0 0 Y Y 1 F P
+DEF VCC-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "coroam_brains-rescue_VCC-power" 0 150 50 H V C CNN
+F1 "VCC-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -275,11 +275,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_level_shifter-laserhannes_custom
+# level_shifter-laserhannes_custom
 #
-DEF coroam_brains-rescue_level_shifter-laserhannes_custom lls 0 40 Y Y 1 F N
+DEF level_shifter-laserhannes_custom lls 0 40 Y Y 1 F N
 F0 "lls" -50 300 50 H V C CNN
-F1 "coroam_brains-rescue_level_shifter-laserhannes_custom" 0 -350 50 H V C CNN
+F1 "level_shifter-laserhannes_custom" 0 -350 50 H V C CNN
 F2 "laserhannes_custom:level_shifte" -50 300 50 H I C CNN
 F3 "" -50 300 50 H I C CNN
 DRAW
@@ -299,11 +299,11 @@ X LV1 1 -400 250 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# coroam_brains-rescue_mini_esp32-laserhannes_custom
+# mini_esp32-laserhannes_custom
 #
-DEF coroam_brains-rescue_mini_esp32-laserhannes_custom U 0 40 Y Y 1 F N
+DEF mini_esp32-laserhannes_custom U 0 40 Y Y 1 F N
 F0 "U" -300 -2000 50 H V C CNN
-F1 "coroam_brains-rescue_mini_esp32-laserhannes_custom" 200 -2350 50 H V C CNN
+F1 "mini_esp32-laserhannes_custom" 200 -2350 50 H V C CNN
 F2 "" 150 100 50 H I C CNN
 F3 "" 150 100 50 H I C CNN
 DRAW
