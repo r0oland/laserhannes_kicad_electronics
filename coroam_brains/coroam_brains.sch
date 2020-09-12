@@ -572,36 +572,36 @@ Wire Wire Line
 	2500 3100 2400 3100
 Connection ~ 2500 2750
 $Comp
-L coroam_brains-rescue:Fan_4pin-Motor #Fan1
+L coroam_brains-rescue:Fan_4pin-Motor #CaseFans1
 U 1 1 5F654C7A
-P 4250 3200
-F 0 "#Fan1" H 4408 3250 50  0000 L CNN
-F 1 "Fan_4pin" H 4408 3205 50  0001 L CNN
-F 2 "" H 4250 3210 50  0001 C CNN
-F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 3210 50  0001 C CNN
-	1    4250 3200
+P 2750 5350
+F 0 "#CaseFans1" H 2908 5400 50  0000 L CNN
+F 1 "Fan_4pin" H 2908 5355 50  0001 L CNN
+F 2 "" H 2750 5360 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 2750 5360 50  0001 C CNN
+	1    2750 5350
 	1    0    0    -1  
 $EndComp
 $Comp
-L coroam_brains-rescue:Fan_4pin-Motor #Fan2
+L coroam_brains-rescue:Fan_4pin-Motor #RadiatorFans1
 U 1 1 5F657083
-P 4250 3850
-F 0 "#Fan2" H 4408 3900 50  0000 L CNN
-F 1 "Fan_4pin" H 4408 3855 50  0001 L CNN
-F 2 "" H 4250 3860 50  0001 C CNN
-F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 3860 50  0001 C CNN
-	1    4250 3850
+P 1900 5350
+F 0 "#RadiatorFans1" H 2058 5400 50  0000 L CNN
+F 1 "Fan_4pin" H 2058 5355 50  0001 L CNN
+F 2 "" H 1900 5360 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 1900 5360 50  0001 C CNN
+	1    1900 5350
 	1    0    0    -1  
 $EndComp
 $Comp
-L coroam_brains-rescue:Fan_4pin-Motor #Fan3
+L coroam_brains-rescue:Fan_4pin-Motor #Pump1
 U 1 1 5F657A07
-P 4250 4550
-F 0 "#Fan3" H 4408 4600 50  0000 L CNN
-F 1 "Fan_4pin" H 4408 4555 50  0001 L CNN
-F 2 "" H 4250 4560 50  0001 C CNN
-F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4250 4560 50  0001 C CNN
-	1    4250 4550
+P 1100 5350
+F 0 "#Pump1" H 1258 5400 50  0000 L CNN
+F 1 "Fan_4pin" H 1258 5355 50  0001 L CNN
+F 2 "" H 1100 5360 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 1100 5360 50  0001 C CNN
+	1    1100 5350
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -728,7 +728,7 @@ Wire Wire Line
 Text Notes 700  2200 0    50   ~ 0
 DS18B20 based temperature sensing
 Text Notes 4100 650  0    50   ~ 0
-DS18B20 based temperature sensing
+OLED Screen
 $Comp
 L coroam_brains-rescue:Screw_Terminal_01x04-Connector LCD_I2C1
 U 1 1 5F5A1687
@@ -740,4 +740,14 @@ F 3 "~" H 4800 1200 50  0001 C CNN
 	1    4800 1200
 	-1   0    0    1   
 $EndComp
+Text Notes 850  5000 0    50   ~ 0
+Pump / Fan Control
+Text Notes 850  5800 0    50   ~ 0
+Pump / Fan Sensing?
+Text Notes 850  6250 0    50   ~ 0
+LED Strips (status + case)\n
+Text Notes 850  6700 0    50   ~ 0
+Door Open/Close\n
+Text Notes 2750 6250 0    50   ~ 0
+Laser Shutter Servo Control
 $EndSCHEMATC
