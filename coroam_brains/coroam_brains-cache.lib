@@ -1,6 +1,196 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# Analog_Switch_ADG419BN
+#
+DEF Analog_Switch_ADG419BN U 0 10 Y Y 2 F N
+F0 "U" -125 185 50 H V L CNN
+F1 "Analog_Switch_ADG419BN" -125 115 50 H V L CNN
+F2 "Package_DIP:DIP-8_W7.62mm" 0 -300 50 H I C CNN
+F3 "" 0 -200 50 H I C CNN
+ALIAS ADG419BN MAX319xPA
+$FPLIST
+ DIP*W7.62mm*
+$ENDFPLIST
+DRAW
+C -85 -100 20 1 1 10 N
+C 85 -200 20 1 1 10 N
+C 85 0 20 1 1 10 N
+S -150 75 150 -300 1 1 10 f
+S -150 400 250 -400 2 1 10 f
+P 2 1 1 0 -200 -100 -110 -100 N
+P 2 1 1 10 -65 -95 100 -25 N
+P 2 1 1 0 0 -300 0 -280 N
+P 2 1 1 0 0 -270 0 -260 N
+P 2 1 1 0 0 -250 0 -240 N
+P 2 1 1 0 0 -230 0 -220 N
+P 2 1 1 0 0 -210 0 -200 N
+P 2 1 1 0 0 -190 0 -180 N
+P 2 1 1 0 0 -170 0 -160 N
+P 2 1 1 0 0 -150 0 -140 N
+P 2 1 1 0 0 -130 0 -120 N
+P 2 1 1 0 0 -110 0 -100 N
+P 2 1 1 0 0 -90 0 -80 N
+P 2 1 1 0 0 -90 0 -80 N
+P 2 1 1 0 200 -200 110 -200 N
+P 2 1 1 0 200 0 110 0 N
+X GND 3 0 -500 100 U 50 50 2 0 W
+X V+ 4 0 500 100 D 50 50 2 0 W
+X VL 5 100 500 100 D 50 50 2 0 W
+X V- 7 100 -500 100 U 50 50 2 0 W
+X ~ 1 -300 -100 100 R 50 50 1 1 P
+X ~ 2 300 0 100 L 50 50 1 1 P
+X ~ 6 0 -400 100 U 50 50 1 1 I
+X ~ 8 300 -200 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Conn_01x03_Female
+#
+DEF Connector_Conn_01x03_Female J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Conn_01x03_Female" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+A 0 -100 20 901 -901 1 1 6 N 0 -80 0 -120
+A 0 0 20 901 -901 1 1 6 N 0 20 0 -20
+A 0 100 20 901 -901 1 1 6 N 0 120 0 80
+P 2 1 1 6 -50 -100 -20 -100 N
+P 2 1 1 6 -50 0 -20 0 N
+P 2 1 1 6 -50 100 -20 100 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x02
+#
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_D_Small_ALT
+#
+DEF Device_D_Small_ALT D 0 10 N N 1 F N
+F0 "D" -50 80 50 H V L CNN
+F1 "Device_D_Small_ALT" -150 -80 50 H V L CNN
+F2 "" 0 0 50 V I C CNN
+F3 "" 0 0 50 V I C CNN
+$FPLIST
+ TO-???*
+ *_Diode_*
+ *SingleDiode*
+ D_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 -30 -40 -30 40 N
+P 2 0 1 0 -30 0 30 0 N
+P 4 0 1 0 30 -40 -30 0 30 40 30 -40 F
+X K 1 -100 0 70 R 50 50 1 1 P
+X A 2 100 0 70 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# LED_WS2812B
+#
+DEF LED_WS2812B D 0 10 Y Y 1 F N
+F0 "D" 200 225 50 H V R BNN
+F1 "LED_WS2812B" 50 -225 50 H V L TNN
+F2 "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm" 50 -300 50 H I L TNN
+F3 "" 100 -375 50 H I L TNN
+$FPLIST
+ LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*
+$ENDFPLIST
+DRAW
+T 0 90 -165 30 0 0 0 RGB Normal 0 C C
+S 200 200 -200 -200 0 1 10 f
+P 2 0 1 0 50 -140 70 -140 N
+P 2 0 1 0 50 -100 70 -100 N
+P 2 0 1 0 185 -140 105 -140 N
+P 3 0 1 0 90 -100 50 -140 50 -120 N
+P 3 0 1 0 90 -60 50 -100 50 -80 N
+P 3 0 1 0 145 -40 145 -140 145 -160 N
+P 4 0 1 0 185 -60 105 -60 145 -140 185 -60 N
+X VDD 1 0 300 100 D 50 50 1 1 W
+X DOUT 2 300 0 100 L 50 50 1 1 O
+X VSS 3 0 -300 100 U 50 50 1 1 W
+X DIN 4 -300 0 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Motor_Motor_Servo
+#
+DEF Motor_Motor_Servo M 0 1 Y Y 1 F N
+F0 "M" -200 175 50 H V L CNN
+F1 "Motor_Motor_Servo" -200 -160 50 H V L TNN
+F2 "" 0 -190 50 H I C CNN
+F3 "" 0 -190 50 H I C CNN
+ALIAS Motor_Servo_JR Motor_Servo_Hitec Motor_Servo_Futaba_J Motor_Servo_Robbe Motor_Servo_Grapner_JR
+$FPLIST
+ PinHeader*P2.54mm*
+$ENDFPLIST
+DRAW
+A 125 0 76 1132 -1132 0 1 0 N 95 70 95 -70
+A 267 142 37 1173 -273 0 1 0 N 250 175 300 125
+C 125 0 7 0 1 0 N
+C 125 0 56 0 1 0 N
+C 235 110 5 0 1 0 N
+C 255 130 5 0 1 0 N
+C 275 150 5 0 1 0 N
+P 2 0 1 0 95 -70 80 -70 N
+P 2 0 1 0 95 -70 90 -55 N
+P 2 0 1 0 95 70 75 70 N
+P 2 0 1 0 95 70 90 55 N
+P 2 0 1 0 250 175 100 50 N
+P 2 0 1 0 300 125 165 -40 N
+P 5 0 1 10 200 140 -200 140 -200 -140 250 -140 250 60 N
+X PWM 1 -300 100 100 R 50 50 1 1 P
+X + 2 -300 0 100 R 50 50 1 1 P
+X - 3 -300 -100 100 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # coroam_brains-rescue_+12V-power
 #
 DEF coroam_brains-rescue_+12V-power #PWR 0 0 Y Y 1 F P
@@ -258,20 +448,6 @@ X Pin_1 1 -200 100 150 R 50 50 1 1 P
 X Pin_2 2 -200 0 150 R 50 50 1 1 P
 X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 X Pin_4 4 -200 -200 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# coroam_brains-rescue_VCC-power
-#
-DEF coroam_brains-rescue_VCC-power #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "coroam_brains-rescue_VCC-power" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
