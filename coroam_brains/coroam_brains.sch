@@ -959,67 +959,12 @@ Wire Wire Line
 	1300 5150 1350 5150
 Wire Wire Line
 	1350 5150 1350 5100
-Connection ~ 1350 5350
-Wire Wire Line
-	1750 5350 1750 5250
-Wire Wire Line
-	1300 5250 1750 5250
-Wire Wire Line
-	1800 5250 1750 5250
-Connection ~ 1750 5250
 Text GLabel 6150 1200 0    50   Input ~ 0
 PumpPWM_3V
 Text GLabel 6150 1500 0    50   Input ~ 0
 CaseFanPWM_3V
 Text GLabel 6150 1600 0    50   Input ~ 0
 RadFanPWM_3V
-Text GLabel 2100 5150 1    50   Input ~ 0
-Door_3V
-Text GLabel 1800 5150 1    50   Input ~ 0
-Door_5V
-$Comp
-L coroam_brains-rescue:R-Device R5
-U 1 1 5F76259E
-P 2250 5250
-F 0 "R5" V 2250 5300 50  0000 R CNN
-F 1 "10k" V 2350 5350 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 2180 5250 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 2250 5250 50  0001 C CNN
-	1    2250 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R4
-U 1 1 5F763355
-P 1950 5250
-F 0 "R4" V 1950 5300 50  0000 R CNN
-F 1 "5.1k" V 2050 5350 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 1880 5250 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 1950 5250 50  0001 C CNN
-	1    1950 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L coroam_brains-rescue:GND-power #PWR022
-U 1 1 5F7650B8
-P 2550 5350
-F 0 "#PWR022" H 2550 5100 50  0001 C CNN
-F 1 "GND" H 2555 5177 50  0000 C CNN
-F 2 "" H 2550 5350 50  0001 C CNN
-F 3 "" H 2550 5350 50  0001 C CNN
-	1    2550 5350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 5250 2550 5350
-Wire Wire Line
-	2400 5250 2550 5250
-Wire Wire Line
-	2100 5150 2100 5250
-Connection ~ 2100 5250
-Wire Wire Line
-	1800 5150 1800 5250
-Connection ~ 1800 5250
 $Comp
 L coroam_brains-rescue:R-Device R9
 U 1 1 5F7C2130
@@ -1759,8 +1704,6 @@ F 3 "" H 5200 900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6050 900  6050 1300
-Wire Wire Line
-	1350 5350 1750 5350
 $Comp
 L coroam_brains-rescue:Fan_4pin-Motor CaseFan1
 U 1 1 5F654C7A
@@ -1783,4 +1726,53 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 41
 	1    4400 4150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1600 5150 1600 5250
+Connection ~ 1900 5250
+Wire Wire Line
+	1900 5150 1900 5250
+Wire Wire Line
+	2200 5250 2350 5250
+Wire Wire Line
+	2350 5250 2350 5350
+$Comp
+L coroam_brains-rescue:GND-power #PWR022
+U 1 1 5F7650B8
+P 2350 5350
+F 0 "#PWR022" H 2350 5100 50  0001 C CNN
+F 1 "GND" H 2355 5177 50  0000 C CNN
+F 2 "" H 2350 5350 50  0001 C CNN
+F 3 "" H 2350 5350 50  0001 C CNN
+	1    2350 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L coroam_brains-rescue:R-Device R4
+U 1 1 5F763355
+P 1750 5250
+F 0 "R4" V 1750 5300 50  0000 R CNN
+F 1 "5.1k" V 1850 5350 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 1680 5250 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 1750 5250 50  0001 C CNN
+	1    1750 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L coroam_brains-rescue:R-Device R5
+U 1 1 5F76259E
+P 2050 5250
+F 0 "R5" V 2050 5300 50  0000 R CNN
+F 1 "10k" V 2150 5350 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 1980 5250 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 2050 5250 50  0001 C CNN
+	1    2050 5250
+	0    1    1    0   
+$EndComp
+Text GLabel 1600 5150 1    50   Input ~ 0
+Door_5V
+Text GLabel 1900 5150 1    50   Input ~ 0
+Door_3V
+Wire Wire Line
+	1300 5250 1600 5250
+Connection ~ 1600 5250
 $EndSCHEMATC

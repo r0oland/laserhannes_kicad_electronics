@@ -720,17 +720,6 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 29
 	1    4400 2950
 	1    0    0    -1  
 $EndComp
-$Comp
-L coroam_brains-rescue:Fan_4pin-Motor Pump1
-U 1 1 5F5FC139
-P 4400 4150
-F 0 "Pump1" H 4100 4350 50  0000 L CNN
-F 1 "Fan_4pin" H 4558 4155 50  0001 L CNN
-F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 4400 4160 50  0001 C CNN
-F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 4160 50  0001 C CNN
-	1    4400 4150
-	1    0    0    -1  
-$EndComp
 Text GLabel 8950 4950 0    50   Input ~ 0
 PumpPWM_3V
 $Comp
@@ -923,98 +912,12 @@ Text GLabel 4050 4050 0    50   Input ~ 0
 PumpTach
 Text GLabel 4050 2850 0    50   Input ~ 0
 RadFanTach
-$Comp
-L coroam_brains-rescue:+5V-power #PWR023
-U 1 1 5F684A04
-P 3500 2500
-F 0 "#PWR023" H 3500 2350 50  0001 C CNN
-F 1 "+5V" H 3515 2673 50  0000 C CNN
-F 2 "" H 3500 2500 50  0001 C CNN
-F 3 "" H 3500 2500 50  0001 C CNN
-	1    3500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R6
-U 1 1 5F685C2D
-P 3800 2550
-F 0 "R6" V 3800 2600 50  0000 R CNN
-F 1 "10k" V 3700 2650 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 3730 2550 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 3800 2550 50  0001 C CNN
-	1    3800 2550
-	0    -1   -1   0   
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R7
-U 1 1 5F68F0C6
-P 3800 3200
-F 0 "R7" V 3800 3250 50  0000 R CNN
-F 1 "10k" V 3700 3300 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 3730 3200 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 3800 3200 50  0001 C CNN
-	1    3800 3200
-	0    -1   -1   0   
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R8
-U 1 1 5F68F8AA
-P 3800 3800
-F 0 "R8" V 3800 3850 50  0000 R CNN
-F 1 "10k" V 3700 3900 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 3730 3800 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 3800 3800 50  0001 C CNN
-	1    3800 3800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3950 2550 4100 2550
-Wire Wire Line
-	4100 2550 4100 2850
 Wire Wire Line
 	4100 2850 4050 2850
-Connection ~ 4100 2850
-Wire Wire Line
-	3950 3200 4100 3200
-Wire Wire Line
-	4100 3200 4100 3450
 Wire Wire Line
 	4050 3450 4100 3450
 Wire Wire Line
-	3500 2500 3500 2550
-Wire Wire Line
-	3500 3200 3650 3200
-Wire Wire Line
-	3650 2550 3500 2550
-Connection ~ 3500 2550
-Wire Wire Line
-	3500 2550 3500 3200
-Wire Wire Line
-	3500 3200 3500 3800
-Wire Wire Line
-	3500 3800 3650 3800
-Connection ~ 3500 3200
-Wire Wire Line
 	4050 4050 4100 4050
-Wire Wire Line
-	4100 3800 4100 4050
-Wire Wire Line
-	3950 3800 4100 3800
-Connection ~ 4100 4050
-Connection ~ 4100 3450
-$Comp
-L coroam_brains-rescue:Fan_4pin-Motor CaseFan1
-U 1 1 5F654C7A
-P 4400 3550
-F 0 "CaseFan1" H 4000 3750 50  0000 L CNN
-F 1 "Fan_4pin" H 4558 3555 50  0001 L CNN
-F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 4400 3560 50  0001 C CNN
-F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 3560 50  0001 C CNN
-	1    4400 3550
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	3350 2200 3350 4650
 $Comp
 L Connector:Conn_01x03_Female J1
 U 1 1 5F6FE647
@@ -1858,4 +1761,26 @@ Wire Wire Line
 	6050 900  6050 1300
 Wire Wire Line
 	1350 5350 1750 5350
+$Comp
+L coroam_brains-rescue:Fan_4pin-Motor CaseFan1
+U 1 1 5F654C7A
+P 4400 3550
+F 0 "CaseFan1" H 4000 3750 50  0000 L CNN
+F 1 "Fan_4pin" H 4558 3555 50  0001 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 4400 3560 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 3560 50  0001 C CNN
+	1    4400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L coroam_brains-rescue:Fan_4pin-Motor Pump1
+U 1 1 5F5FC139
+P 4400 4150
+F 0 "Pump1" H 4100 4350 50  0000 L CNN
+F 1 "Fan_4pin" H 4558 4155 50  0001 L CNN
+F 2 "Connector:FanPinHeader_1x04_P2.54mm_Vertical" H 4400 4160 50  0001 C CNN
+F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 4160 50  0001 C CNN
+	1    4400 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
