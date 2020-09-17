@@ -17,56 +17,56 @@ $EndDescr
 $Comp
 L coroam_brains-rescue:+3.3V-power #PWR018
 U 1 1 5F539EF8
-P 10300 2550
-F 0 "#PWR018" H 10300 2400 50  0001 C CNN
-F 1 "+3.3V" H 10315 2723 50  0000 C CNN
-F 2 "" H 10300 2550 50  0001 C CNN
-F 3 "" H 10300 2550 50  0001 C CNN
-	1    10300 2550
+P 10950 2500
+F 0 "#PWR018" H 10950 2350 50  0001 C CNN
+F 1 "+3.3V" H 10965 2673 50  0000 C CNN
+F 2 "" H 10950 2500 50  0001 C CNN
+F 3 "" H 10950 2500 50  0001 C CNN
+	1    10950 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L coroam_brains-rescue:GND-power #PWR017
 U 1 1 5F53B2BB
-P 10200 3150
-F 0 "#PWR017" H 10200 2900 50  0001 C CNN
-F 1 "GND" H 10205 2977 50  0000 C CNN
-F 2 "" H 10200 3150 50  0001 C CNN
-F 3 "" H 10200 3150 50  0001 C CNN
-	1    10200 3150
+P 10850 3100
+F 0 "#PWR017" H 10850 2850 50  0001 C CNN
+F 1 "GND" H 10855 2927 50  0000 C CNN
+F 2 "" H 10850 3100 50  0001 C CNN
+F 3 "" H 10850 3100 50  0001 C CNN
+	1    10850 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 2850 10200 2850
+	10650 2800 10850 2800
 Wire Wire Line
-	10200 2850 10200 2950
+	10850 2800 10850 2900
 Wire Wire Line
-	10000 2950 10200 2950
-Connection ~ 10200 2950
+	10650 2900 10850 2900
+Connection ~ 10850 2900
 Wire Wire Line
-	10200 2950 10200 3050
+	10850 2900 10850 3000
 Wire Wire Line
-	10000 3050 10200 3050
-Connection ~ 10200 3050
+	10650 3000 10850 3000
+Connection ~ 10850 3000
 $Comp
 L coroam_brains-rescue:+5V-power #PWR015
 U 1 1 5F543A46
-P 10050 2550
-F 0 "#PWR015" H 10050 2400 50  0001 C CNN
-F 1 "+5V" H 10065 2723 50  0000 C CNN
-F 2 "" H 10050 2550 50  0001 C CNN
-F 3 "" H 10050 2550 50  0001 C CNN
-	1    10050 2550
+P 10700 2500
+F 0 "#PWR015" H 10700 2350 50  0001 C CNN
+F 1 "+5V" H 10715 2673 50  0000 C CNN
+F 2 "" H 10700 2500 50  0001 C CNN
+F 3 "" H 10700 2500 50  0001 C CNN
+	1    10700 2500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 2750 10300 2750
+	10650 2700 10950 2700
 Wire Wire Line
-	10300 2750 10300 2550
+	10950 2700 10950 2500
 Wire Wire Line
-	10050 2550 10050 2650
+	10700 2500 10700 2600
 Wire Wire Line
-	10050 2650 10000 2650
+	10700 2600 10650 2600
 $Comp
 L coroam_brains-rescue:+5V-power #PWR02
 U 1 1 5F540B62
@@ -535,12 +535,12 @@ $EndComp
 $Comp
 L coroam_brains-rescue:mini_esp32-laserhannes_custom U2
 U 1 1 5F53A6B0
-P 9450 2550
-F 0 "U2" H 9475 2675 50  0000 C CNN
-F 1 "mini_esp32" H 9475 2584 50  0000 C CNN
-F 2 "laserhannes_custom:mini_esp32" H 9600 2650 50  0001 C CNN
-F 3 "" H 9600 2650 50  0001 C CNN
-	1    9450 2550
+P 10100 2500
+F 0 "U2" H 10125 2625 50  0000 C CNN
+F 1 "mini_esp32" H 10125 2534 50  0000 C CNN
+F 2 "laserhannes_custom:mini_esp32" H 10250 2600 50  0001 C CNN
+F 3 "" H 10250 2600 50  0001 C CNN
+	1    10100 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -654,13 +654,13 @@ Wire Wire Line
 	2550 2850 2700 2850
 Wire Notes Line
 	700  4600 700  2200
-Text GLabel 8950 4750 0    50   Input ~ 0
+Text GLabel 9600 4700 0    50   Input ~ 0
 OneWireBus
-Text Notes 9200 5450 0    50   ~ 0
+Text Notes 9850 5400 0    50   ~ 0
 Pin   Usage \nIO_23 OneWire\nIO_21 SDA\nIO_22 SCL
-Text GLabel 8950 4650 0    50   Input ~ 0
+Text GLabel 9600 4600 0    50   Input ~ 0
 SCL
-Text GLabel 8950 4550 0    50   Input ~ 0
+Text GLabel 9600 4500 0    50   Input ~ 0
 SDA
 Wire Wire Line
 	3000 2750 3000 2850
@@ -679,7 +679,7 @@ Wire Notes Line
 Wire Notes Line
 	700  4600 3100 4600
 Wire Wire Line
-	10200 3050 10200 3150
+	10850 3000 10850 3100
 Text Notes 700  2200 0    50   ~ 10
 DS18B20 based temperature sensing
 Text Notes 4100 650  0    50   ~ 10
@@ -697,17 +697,13 @@ F 3 "~" H 4800 1200 50  0001 C CNN
 $EndComp
 Text Notes 3350 2200 0    50   ~ 10
 Pump + fan control and sensing
-Text Notes 2750 4800 0    50   ~ 10
-LED Strips (status + case)\n
-Text Notes 700  4800 0    50   ~ 10
-Door Open/Close\n
 Text Notes 700  5800 0    50   ~ 10
 Laser Shutter Servo Control
 Text Notes 5050 4800 0    50   ~ 10
 RF Switch Control
-Text GLabel 8950 3750 0    50   Input ~ 0
+Text GLabel 9600 3700 0    50   Input ~ 0
 CaseFanPWM_3V
-Text GLabel 8950 3850 0    50   Input ~ 0
+Text GLabel 9600 3800 0    50   Input ~ 0
 RadFanPWM_3V
 $Comp
 L coroam_brains-rescue:Fan_4pin-Motor RadiatorFan1
@@ -720,7 +716,7 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 29
 	1    4400 2950
 	1    0    0    -1  
 $EndComp
-Text GLabel 8950 4950 0    50   Input ~ 0
+Text GLabel 9600 4900 0    50   Input ~ 0
 PumpPWM_3V
 $Comp
 L coroam_brains-rescue:CP-Device C8
@@ -918,47 +914,6 @@ Wire Wire Line
 	4050 3450 4100 3450
 Wire Wire Line
 	4050 4050 4100 4050
-$Comp
-L Connector:Conn_01x03_Female J1
-U 1 1 5F6FE647
-P 1100 5300
-F 0 "J1" H 1128 5326 50  0000 L CNN
-F 1 "OpenCirc" H 1128 5235 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1100 5300 50  0001 C CNN
-F 3 "~" H 1100 5300 50  0001 C CNN
-	1    1100 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L coroam_brains-rescue:GND-power #PWR021
-U 1 1 5F70CC83
-P 1350 5450
-F 0 "#PWR021" H 1350 5200 50  0001 C CNN
-F 1 "GND" H 1355 5277 50  0000 C CNN
-F 2 "" H 1350 5450 50  0001 C CNN
-F 3 "" H 1350 5450 50  0001 C CNN
-	1    1350 5450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 5400 1350 5400
-Wire Wire Line
-	1350 5400 1350 5450
-$Comp
-L coroam_brains-rescue:+5V-power #PWR020
-U 1 1 5F713D0D
-P 1350 5150
-F 0 "#PWR020" H 1350 5000 50  0001 C CNN
-F 1 "+5V" H 1365 5323 50  0000 C CNN
-F 2 "" H 1350 5150 50  0001 C CNN
-F 3 "" H 1350 5150 50  0001 C CNN
-	1    1350 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 5200 1350 5200
-Wire Wire Line
-	1350 5200 1350 5150
 Text GLabel 6150 1200 0    50   Input ~ 0
 PumpPWM_3V
 Text GLabel 6150 1500 0    50   Input ~ 0
@@ -970,7 +925,7 @@ L coroam_brains-rescue:R-Device R9
 U 1 1 5F7C2130
 P 6100 2650
 F 0 "R9" V 6100 2700 50  0000 R CNN
-F 1 "5.1k" V 6200 2800 50  0000 R CNN
+F 1 "10k" V 6200 2800 50  0000 R CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6030 2650 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 6100 2650 50  0001 C CNN
 	1    6100 2650
@@ -1015,7 +970,7 @@ L coroam_brains-rescue:R-Device R10
 U 1 1 5F80B65A
 P 6100 3350
 F 0 "R10" V 6100 3450 50  0000 R CNN
-F 1 "5.1k" V 6200 3500 50  0000 R CNN
+F 1 "10k" V 6200 3500 50  0000 R CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6030 3350 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 6100 3350 50  0001 C CNN
 	1    6100 3350
@@ -1059,7 +1014,7 @@ L coroam_brains-rescue:R-Device R11
 U 1 1 5F8170CE
 P 6100 4100
 F 0 "R11" V 6100 4200 50  0000 R CNN
-F 1 "5.1k" V 6200 4250 50  0000 R CNN
+F 1 "10k" V 6200 4250 50  0000 R CNN
 F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 6030 4100 50  0001 C CNN
 F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 6100 4100 50  0001 C CNN
 	1    6100 4100
@@ -1097,11 +1052,11 @@ Text GLabel 6300 3200 2    50   Input ~ 0
 CaseFanTach_3V
 Text GLabel 6300 3950 2    50   Input ~ 0
 PumpTach_3V
-Text GLabel 8950 4450 0    50   Input ~ 0
+Text GLabel 9600 4400 0    50   Input ~ 0
 PumpTach_3V
-Text GLabel 8950 4250 0    50   Input ~ 0
+Text GLabel 9600 4200 0    50   Input ~ 0
 CaseFanTach_3V
-Text GLabel 8950 4050 0    50   Input ~ 0
+Text GLabel 9600 4000 0    50   Input ~ 0
 RadFanTach_3V
 Text GLabel 6900 1200 2    50   Input ~ 0
 PumpPWM
@@ -1119,19 +1074,11 @@ Text Notes 5450 650  0    50   ~ 10
 5V <-> 3.3V level shifting
 Wire Notes Line
 	5450 650  5450 2100
-Wire Notes Line
-	700  4800 2700 4800
-Wire Notes Line
-	2700 4800 2700 5650
-Wire Notes Line
-	2700 5650 700  5650
-Wire Notes Line
-	700  5650 700  4800
 Text Notes 7100 2300 0    50   ~ 10
 Laser Interlock Ctrl
 Connection ~ 6250 2650
-Text GLabel 8950 4850 0    50   Input ~ 0
-Door_3V
+Text GLabel 9600 4800 0    50   Input ~ 0
+Door
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 5F685049
@@ -1173,7 +1120,7 @@ Wire Wire Line
 	10200 1000 10200 950 
 Wire Wire Line
 	10200 950  10250 950 
-Text GLabel 8950 5050 0    50   Input ~ 0
+Text GLabel 9600 5000 0    50   Input ~ 0
 Servo_3V
 Text GLabel 6150 1100 0    50   Input ~ 0
 Servo_3V
@@ -1517,20 +1464,16 @@ F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" 
 	1    6400 2650
 	0    1    1    0   
 $EndComp
-Text GLabel 8950 3950 0    50   Input ~ 0
+Text GLabel 9600 3900 0    50   Input ~ 0
 Interlock
-Text GLabel 8950 3450 0    50   Input ~ 0
+Text GLabel 9600 3400 0    50   Input ~ 0
 STATUS_LED_3V
-Text GLabel 8950 2850 0    50   Input ~ 0
+Text GLabel 9600 2800 0    50   Input ~ 0
 CASE_LED_3V
-Wire Notes Line
-	2750 4800 5000 4800
 Wire Notes Line
 	5000 4800 5000 6400
 Wire Notes Line
 	5000 6400 2750 6400
-Wire Notes Line
-	2750 6400 2750 4800
 Wire Notes Line
 	5450 650  9550 650 
 Wire Notes Line
@@ -1572,8 +1515,6 @@ Wire Wire Line
 	7550 3150 7600 3150
 Wire Wire Line
 	7600 3150 7600 3200
-Text GLabel 7700 3050 2    50   Input ~ 0
-Interlock
 Wire Wire Line
 	7550 3050 7600 3050
 $Comp
@@ -1634,23 +1575,21 @@ $EndComp
 Wire Wire Line
 	6300 5350 6250 5350
 Wire Notes Line
-	8150 2300 8150 3500
-Wire Notes Line
 	8150 3500 7100 3500
 Wire Notes Line
 	7100 3500 7100 2300
 Wire Notes Line
 	7100 2300 8150 2300
-Text Notes 8250 2300 0    50   ~ 10
-Laser Interlock Ctrl
+Text Notes 8900 2250 0    50   ~ 10
+ESP32\n
 Wire Notes Line
-	8250 2300 10450 2300
+	8900 2250 11100 2250
 Wire Notes Line
-	10450 2300 10450 5500
+	11100 2250 11100 5450
 Wire Notes Line
-	10450 5500 8250 5500
+	11100 5450 8900 5450
 Wire Notes Line
-	8250 5500 8250 2300
+	8900 5450 8900 2250
 $Comp
 L coroam_brains-rescue:+3.3V-power #PWR033
 U 1 1 5F88BB21
@@ -1686,55 +1625,6 @@ F 3 "http://www.formfactors.org/developer%5Cspecs%5Crev1_2_public.pdf" H 4400 41
 	1    4400 4150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 5200 1600 5300
-Connection ~ 1900 5300
-Wire Wire Line
-	1900 5200 1900 5300
-Wire Wire Line
-	2200 5300 2350 5300
-Wire Wire Line
-	2350 5300 2350 5400
-$Comp
-L coroam_brains-rescue:GND-power #PWR022
-U 1 1 5F7650B8
-P 2350 5400
-F 0 "#PWR022" H 2350 5150 50  0001 C CNN
-F 1 "GND" H 2355 5227 50  0000 C CNN
-F 2 "" H 2350 5400 50  0001 C CNN
-F 3 "" H 2350 5400 50  0001 C CNN
-	1    2350 5400
-	1    0    0    -1  
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R4
-U 1 1 5F763355
-P 1750 5300
-F 0 "R4" V 1750 5350 50  0000 R CNN
-F 1 "5.1k" V 1850 5400 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 1680 5300 50  0001 C CNN
-F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 1750 5300 50  0001 C CNN
-	1    1750 5300
-	0    1    1    0   
-$EndComp
-$Comp
-L coroam_brains-rescue:R-Device R5
-U 1 1 5F76259E
-P 2050 5300
-F 0 "R5" V 2050 5350 50  0000 R CNN
-F 1 "10k" V 2150 5400 50  0000 R CNN
-F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 1980 5300 50  0001 C CNN
-F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 2050 5300 50  0001 C CNN
-	1    2050 5300
-	0    1    1    0   
-$EndComp
-Text GLabel 1600 5200 1    50   Input ~ 0
-Door_5V
-Text GLabel 1900 5200 1    50   Input ~ 0
-Door_3V
-Wire Wire Line
-	1300 5300 1600 5300
-Connection ~ 1600 5300
 $Comp
 L Connector:Screw_Terminal_01x02 J3
 U 1 1 5F62A4D2
@@ -1843,9 +1733,9 @@ Wire Wire Line
 Connection ~ 6100 5900
 Wire Wire Line
 	6100 5900 6100 5850
-Text GLabel 8950 2950 0    50   Input ~ 0
+Text GLabel 9600 2900 0    50   Input ~ 0
 RF_SW_OA
-Text GLabel 8950 4150 0    50   Input ~ 0
+Text GLabel 9600 4100 0    50   Input ~ 0
 RF_SW_PD
 $Comp
 L coroam_brains-rescue:GND-power #PWR035
@@ -1885,10 +1775,199 @@ Wire Notes Line
 	700  6700 2700 6700
 Wire Notes Line
 	3350 2200 3350 4650
-Text Notes 7750 6150 0    50   ~ 10
-FIX FAN TACH READ PULLUP!\n
-Text Notes 5800 4050 1    50   ~ 10
-FIX FAN TACH READ PULLUP!\n
-Text Notes 6250 4100 1    50   ~ 10
-FIX FAN TACH READ PULLUP!\n
+$Comp
+L coroam_brains-rescue:CP-Device C?
+U 1 1 5F6428AB
+P 1950 5150
+F 0 "C?" H 2068 5196 50  0000 L CNN
+F 1 "10u" H 2068 5105 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 1988 5000 50  0001 C CNN
+F 3 "~" H 1950 5150 50  0001 C CNN
+	1    1950 5150
+	-1   0    0    1   
+$EndComp
+Text GLabel 7700 3050 2    50   Input ~ 0
+Interlock
+Wire Notes Line
+	8150 2300 8150 3500
+$Comp
+L coroam_brains-rescue:R-Device R5
+U 1 1 5F76259E
+P 1600 5300
+F 0 "R5" V 1600 5350 50  0000 R CNN
+F 1 "1k" V 1700 5400 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical" V 1530 5300 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 1600 5300 50  0001 C CNN
+	1    1600 5300
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	2750 6400 2750 4800
+Wire Notes Line
+	2750 4800 5000 4800
+Wire Notes Line
+	700  5650 700  4800
+Wire Notes Line
+	2700 5650 700  5650
+Wire Notes Line
+	2700 4800 2700 5650
+Wire Notes Line
+	700  4800 2700 4800
+Wire Wire Line
+	1300 5200 1350 5200
+$Comp
+L coroam_brains-rescue:+5V-power #PWR020
+U 1 1 5F713D0D
+P 1350 5050
+F 0 "#PWR020" H 1350 4900 50  0001 C CNN
+F 1 "+5V" H 1450 5150 50  0000 C CNN
+F 2 "" H 1350 5050 50  0001 C CNN
+F 3 "" H 1350 5050 50  0001 C CNN
+	1    1350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5400 1350 5450
+Wire Wire Line
+	1300 5400 1350 5400
+$Comp
+L coroam_brains-rescue:GND-power #PWR021
+U 1 1 5F70CC83
+P 1350 5450
+F 0 "#PWR021" H 1350 5200 50  0001 C CNN
+F 1 "GND" H 1355 5277 50  0000 C CNN
+F 2 "" H 1350 5450 50  0001 C CNN
+F 3 "" H 1350 5450 50  0001 C CNN
+	1    1350 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5F6FE647
+P 1100 5300
+F 0 "J1" H 1128 5326 50  0000 L CNN
+F 1 "OpenCirc" H 1128 5235 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 1100 5300 50  0001 C CNN
+F 3 "~" H 1100 5300 50  0001 C CNN
+	1    1100 5300
+	-1   0    0    1   
+$EndComp
+Text Notes 700  4800 0    50   ~ 10
+Door Open/Close\n
+Text Notes 2750 4800 0    50   ~ 10
+LED Strips (status + case)\n
+$Comp
+L coroam_brains-rescue:R-Device R?
+U 1 1 5F69E268
+P 2250 5150
+F 0 "R?" V 2250 5200 50  0000 R CNN
+F 1 "10k" V 2350 5250 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 2180 5150 50  0001 C CNN
+F 3 "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf" H 2250 5150 50  0001 C CNN
+	1    2250 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 5300 1450 5300
+Wire Wire Line
+	1950 5300 1750 5300
+Wire Wire Line
+	1950 5300 2250 5300
+Connection ~ 1950 5300
+Wire Wire Line
+	2250 5000 1950 5000
+Text GLabel 2350 5300 2    50   Input ~ 0
+Door
+Wire Wire Line
+	2350 5300 2250 5300
+Connection ~ 2250 5300
+Wire Wire Line
+	1350 5050 1350 5200
+$Comp
+L coroam_brains-rescue:+3.3V-power #PWR?
+U 1 1 5F72AF77
+P 1950 5000
+F 0 "#PWR?" H 1950 4850 50  0001 C CNN
+F 1 "+3.3V" H 2100 5100 50  0000 C CNN
+F 2 "" H 1950 5000 50  0001 C CNN
+F 3 "" H 1950 5000 50  0001 C CNN
+	1    1950 5000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 5000
+$Comp
+L coroam_brains-rescue:R-Device R?
+U 1 1 5F72CCFF
+P 5950 3150
+F 0 "R?" V 5950 3250 50  0000 R CNN
+F 1 "10k" V 6050 3300 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 5880 3150 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 5950 3150 50  0001 C CNN
+	1    5950 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L coroam_brains-rescue:R-Device R?
+U 1 1 5F72E0D9
+P 5950 3900
+F 0 "R?" V 5950 4000 50  0000 R CNN
+F 1 "10k" V 6050 4050 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 5880 3900 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L coroam_brains-rescue:R-Device R?
+U 1 1 5F72E6BA
+P 5950 2450
+F 0 "R?" V 5950 2550 50  0000 R CNN
+F 1 "10k" V 6050 2600 50  0000 R CNN
+F 2 "Resistor_SMD:R_2010_5025Metric_Pad1.52x2.65mm_HandSolder" V 5880 2450 50  0001 C CNN
+F 3 "https://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C304.pdf" H 5950 2450 50  0001 C CNN
+	1    5950 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 4050 5950 4100
+Connection ~ 5950 4100
+Wire Wire Line
+	5950 3300 5950 3350
+Connection ~ 5950 3350
+Wire Wire Line
+	5950 2600 5950 2650
+Connection ~ 5950 2650
+$Comp
+L coroam_brains-rescue:+12V-power #PWR?
+U 1 1 5F75E63A
+P 5950 2300
+F 0 "#PWR?" H 5950 2150 50  0001 C CNN
+F 1 "+12V" H 6050 2350 50  0000 C CNN
+F 2 "" H 5950 2300 50  0001 C CNN
+F 3 "" H 5950 2300 50  0001 C CNN
+	1    5950 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L coroam_brains-rescue:+12V-power #PWR?
+U 1 1 5F75EC45
+P 5950 3000
+F 0 "#PWR?" H 5950 2850 50  0001 C CNN
+F 1 "+12V" H 6050 3050 50  0000 C CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L coroam_brains-rescue:+12V-power #PWR?
+U 1 1 5F75F1A8
+P 5950 3750
+F 0 "#PWR?" H 5950 3600 50  0001 C CNN
+F 1 "+12V" H 6050 3800 50  0000 C CNN
+F 2 "" H 5950 3750 50  0001 C CNN
+F 3 "" H 5950 3750 50  0001 C CNN
+	1    5950 3750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
